@@ -176,7 +176,7 @@ a.text-dark {
   z-index: 100;
   width: 395px;
   height: 200px;
-  background-image: url(./img/downloadVideo.png);
+  /* background-image: url(./img/downloadVideo.png); */
   background-size: cover;
   border-radius: 12px;
   filter: grayscale(100%);
@@ -218,7 +218,7 @@ a.text-dark {
   width: 470px;
 }
 .container2 .card2 .pic {
-  background-image: url(./img/Caro.jpg);
+  /* background-image: url(./img/Caro.jpg); */
   transition: .3s ease;
 }
 .container2 .card2 button {
