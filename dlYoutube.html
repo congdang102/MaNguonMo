@@ -121,14 +121,14 @@
                         <ul>
                           <li>Windows</li>
                           <ul>
-                            Tải xuống tệp cài đặt vdbsetup_Windows.zip </ul>
+                            Tải xuống tệp cài đặt vdbsetup_Windows-v1.1.zip </ul>
                           <li>Linux</li>
                           <ul>
-                            Tải xuống tệp cài đặt vdbinstaller_Linux.zip </ul>
+                            Tải xuống tệp cài đặt vdbinstaller_Linux-v1.1.zip </ul>
                         </ul>
                         <ul>
                           Hình ảnh tham khảo
-                          <img src="./img/HinhThamKhao.png" class="img-fluid" alt="">
+                          <img src="./img/Cd1.png" class="img-fluid" alt="">
                         </ul>
   
                       </div>
@@ -146,13 +146,17 @@
                             đặt xong, Video Download Basic sẽ được cài đặt trên máy tính của bạn. </ul>
                           <li>Linux</li>
                           <ul>
-                            Giải nén và chạy file vdb_installer.run bằng terminal. Mở terminal và đi đến thư mục chứa file vdb_installer.run sau đó nhập lệnh sau để tiến hành cài đặt (nhập mật khẩu sudo)
+                            Giải nén và chạy file vdb trong folder vdb để sử dụng.
+
+                           <br> Lưu ý: nên cài đặt ffmpeg trước khi sử dụng
+                            
+                            có thể cài đặt ffmpeg bằng lệnh sau
                           </ul>
                           <div>
                             <p>Đoạn mã cần sao chép:</p>
-                            <code>./vdb_installer.run --noexec --target VideoDownloadBasic | sudo apt-get install ffmpeg</code>
+                            <code>sudo apt-get install ffmpeg</code>
                             <button class="btn btn-primary"
-                              onclick="copyToClipboard('./vdb_installer.run --noexec --target VideoDownloadBasic')">Sao
+                              onclick="copyToClipboard('sudo apt-get install ffmpeg')">Sao
                               chép
                             </button>
                           </div>
@@ -174,15 +178,7 @@
                             Sau khi cài đặt xong, bạn có thể khởi động Video Download Basic bằng cách tìm kiếm ứng dụng
                             Video Download Basic trong menu Start.
                           </ul>
-                          <li>Linux</li>
-                          <ul>
-                            Sau khi cài đặt xong, bạn có thể dùng lệnh sau để khởi chạy ứng dụng (lưu ý cần di chuyển đến
-                            thư mục đã cài đặt xong là VideoDownloadBasic trong terminal) </ul>
-                          <div>
-                            <p>Đoạn mã cần sao chép:</p>
-                            <code>./vdb</code>
-                            <button class="btn btn-primary" onclick="copyToClipboard('./vdb')">Sao chép</button>
-                          </div>
+                         
                         </ul>
                       </div>
                     </ul>
@@ -204,9 +200,8 @@
                         <p>Trước tiên, bạn cần tải xuống mã nguồn của Video Download Basic từ Github. Bạn có thể truy cập
                           vào trang Github của dự án tại đây:
                          <a href=" https://github.com/QuocDuong16/Video-Download-Basic/releases/tag/SourceCode"> https://github.com/QuocDuong16/Video-Download-Basic/releases/tag/SourceCode</a> </p>
-                        <p>Tải xuống file zip VideoDownloadBasic.zip phiên bản mới nhất đúng với hệ điều hành của mình
-                          (VideoDownloadBasic_Windows.zip, VideoDownloadBasic_Linux.zip). Tiến hành tải về và giải nén</p>
-                        <img src="./img/HinhThamKhao.png" class="img-fluid" alt="">
+                        <p>Tải xuống file zip VideoDownloadBasic.zip phiên bản mới nhất đúng với hệ điều hành của mình (VideoDownloadBasic_Windows-v1.1.zip, VideoDownloadBasic_Linux-v1.1.zip). Tiến hành tải về và giải nén</p>
+                        <img src="./img/Cd1.png" class="img-fluid" alt="">
                       </div>
                     </ul>
                     
@@ -229,7 +224,7 @@
                     </ul>
                    <ul>
                     <div id="step8" style="display:none;">
-                      <p>Bạn có thể cài đặt các thư viện cần thiết bằng cách sử dụng file requirements.txt đi kèm với mã
+                      <p>Bạn có thể cài đặt các thư viện cần thiết bằng cách sử dụng file <span style="color: red;">requirements.txt</span>  đi kèm với mã
                         nguồn của Video Download Basic. Mở Command Prompt hoặc Terminal và điều hướng đến thư mục chứa
                         mã nguồn của ứng dụng, sau đó chạy lệnh sau để cài đặt các thư viện cần thiết:</p>
                       <ul>
